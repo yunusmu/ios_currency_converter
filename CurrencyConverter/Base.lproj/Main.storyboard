@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,6 +22,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CZK:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIB-9N-udT">
+                                <rect key="frame" x="166.5" y="378.5" width="41" height="19.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDH-fp-dHR">
+                                <rect key="frame" x="217" y="378" width="31" height="19.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEK:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vi-fh-9e7">
+                                <rect key="frame" x="166.5" y="398.5" width="41" height="19.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFw-xO-wFp">
+                                <rect key="frame" x="217" y="352" width="142" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="812-Xy-oFC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErR-x5-FgO">
+                                <rect key="frame" x="167" y="356" width="41" height="22"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter an Amount in USD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fcc-lt-2UD">
+                                <rect key="frame" x="65.5" y="271" width="245.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXd-Al-wDp">
                                 <rect key="frame" x="151" y="317" width="72" height="32"/>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
@@ -29,76 +69,33 @@
                                     <action selector="buttonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfs-B9-7e1"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeC-up-NBK">
-                                <rect key="frame" x="146.5" y="363.5" width="82.5" height="19.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErR-x5-FgO">
-                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFw-xO-wFp">
-                                        <rect key="frame" x="51.5" y="0.0" width="31" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URD-e0-Y2m">
-                                <rect key="frame" x="146.5" y="390.5" width="82.5" height="19.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CZK :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIB-9N-udT">
-                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDH-fp-dHR">
-                                        <rect key="frame" x="51.5" y="0.0" width="31" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter an Amount in USD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fcc-lt-2UD">
-                                <rect key="frame" x="65" y="270.5" width="245.5" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSI-t3-OPm">
+                                <rect key="frame" x="217" y="399" width="31" height="19.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kg4-u7-DJO">
-                                <rect key="frame" x="146.5" y="417.5" width="82.5" height="19.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEK :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vi-fh-9e7">
-                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSI-t3-OPm">
-                                        <rect key="frame" x="51.5" y="0.0" width="31" height="19.5"/>
-                                        <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QXd-Al-wDp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5eR-uW-NfQ"/>
-                            <constraint firstItem="URD-e0-Y2m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Akw-ra-rAE"/>
+                            <constraint firstItem="vDH-fp-dHR" firstAttribute="leading" secondItem="LIB-9N-udT" secondAttribute="trailing" constant="9.5" id="Dag-9y-F86"/>
                             <constraint firstItem="QXd-Al-wDp" firstAttribute="top" secondItem="Fcc-lt-2UD" secondAttribute="bottom" constant="16.5" id="OyY-iW-qfG"/>
                             <constraint firstItem="Fcc-lt-2UD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ptj-aZ-QRX"/>
-                            <constraint firstItem="RSI-t3-OPm" firstAttribute="top" secondItem="vDH-fp-dHR" secondAttribute="bottom" constant="7.5" id="Qks-WU-Jdl"/>
-                            <constraint firstItem="vDH-fp-dHR" firstAttribute="top" secondItem="xFw-xO-wFp" secondAttribute="bottom" constant="7.5" id="WHb-A7-cIS"/>
-                            <constraint firstItem="Kg4-u7-DJO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a1q-fi-FmY"/>
-                            <constraint firstItem="SeC-up-NBK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cTm-Fx-4ij"/>
+                            <constraint firstItem="xFw-xO-wFp" firstAttribute="top" secondItem="QXd-Al-wDp" secondAttribute="bottom" constant="3" id="QlD-Gd-sO2"/>
+                            <constraint firstItem="LIB-9N-udT" firstAttribute="top" secondItem="ErR-x5-FgO" secondAttribute="bottom" id="el9-RT-vgr"/>
+                            <constraint firstItem="vDH-fp-dHR" firstAttribute="top" secondItem="xFw-xO-wFp" secondAttribute="bottom" constant="-3" id="eqr-3W-pZa"/>
+                            <constraint firstItem="xFw-xO-wFp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="f0P-Tj-dca"/>
+                            <constraint firstItem="xFw-xO-wFp" firstAttribute="centerY" secondItem="ErR-x5-FgO" secondAttribute="centerY" id="f3p-7s-RyA"/>
+                            <constraint firstItem="RSI-t3-OPm" firstAttribute="leading" secondItem="2Vi-fh-9e7" secondAttribute="trailing" constant="9.5" id="iGa-FS-sTz"/>
+                            <constraint firstItem="LIB-9N-udT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ibe-df-hPr"/>
+                            <constraint firstItem="ErR-x5-FgO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jL0-ay-IRc"/>
+                            <constraint firstItem="2Vi-fh-9e7" firstAttribute="top" secondItem="LIB-9N-udT" secondAttribute="bottom" id="mbQ-mA-hnx"/>
+                            <constraint firstItem="2Vi-fh-9e7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q1P-vN-Xce"/>
+                            <constraint firstItem="xFw-xO-wFp" firstAttribute="leading" secondItem="ErR-x5-FgO" secondAttribute="trailing" constant="9" id="sbs-jb-DHq"/>
                             <constraint firstItem="QXd-Al-wDp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="smC-CB-Mai"/>
-                            <constraint firstItem="ErR-x5-FgO" firstAttribute="top" secondItem="QXd-Al-wDp" secondAttribute="bottom" constant="14.5" id="xdr-qM-knX"/>
+                            <constraint firstItem="RSI-t3-OPm" firstAttribute="top" secondItem="vDH-fp-dHR" secondAttribute="bottom" constant="1.5" id="tDk-KJ-m3n"/>
+                            <constraint firstItem="ErR-x5-FgO" firstAttribute="top" secondItem="QXd-Al-wDp" secondAttribute="bottom" constant="7" id="uWS-b0-8V1"/>
                         </constraints>
                     </view>
                     <connections>
